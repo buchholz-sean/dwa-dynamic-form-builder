@@ -1,0 +1,19 @@
+{
+  "name": "dwa-dynamic-form-builder",
+  "version": "1.0.0",
+  "description": "Dynamic HTML form builder",
+  "main": "src/tool.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://buchholz-sean@github.com/buchholz-sean/dwa-dynamic-form-builder.git"
+  },
+  "author": "Sean Buchholz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/buchholz-sean/dwa-dynamic-form-builder/issues"
+  },
+  "homepage": "https://github.com/buchholz-sean/dwa-dynamic-form-builder#readme"
+}
