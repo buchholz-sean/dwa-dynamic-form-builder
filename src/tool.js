@@ -12,6 +12,13 @@ exports.genForm = (inputs) => {
                     case 'text':
                         formStr += '<input type="text"';
                         formStr += input.id ? ' id="' + input.id + '"' : '';
+                        formStr += input.name ? ' name="' + input.name + '"' : '';
+                        formStr += ' />';
+                        break;
+                    case 'password':
+                        formStr += '<input type="password"';
+                        formStr += input.id ? ' id="' + input.id + '"' : '';
+                        formStr += input.name ? ' name="' + input.name + '"' : '';
                         formStr += ' />';
                         break;
                     case 'label':
@@ -24,6 +31,17 @@ exports.genForm = (inputs) => {
                         formStr += '<select';
                         formStr += input.id ? ' id="' + input.id + '"' : '';
                         formStr += '></select>'
+                        break;
+                    case 'reset':
+                        formStr += '<input type="reset"';
+                        formStr += input.id ? ' id="' + input.id + '"' : '';
+                        formStr += ' />';
+                        break;
+                    case 'submit':
+                        formStr += '<input type="submit"';
+                        formStr += input.id ? ' id="' + input.id + '"' : '';
+                        formStr += input.value ? ' value="' + input.value + '"' : '';
+                        formStr += ' />';
                         break;
                     default:
                         // If input doesn't match a supported value for `type`, we don't add anything to formStr
