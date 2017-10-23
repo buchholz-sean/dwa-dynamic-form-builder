@@ -38,7 +38,10 @@ The `type` property is case-insensitive, and the tool will ignore any unrecogniz
 
 ### Basic usage
 
-Import the tool into your project by declaring it as a constant or variable (`const tool = require('./path/to/tool.js');`)
+Import the tool into your project by declaring it as a constant or variable
+```
+const tool = require('./path/to/tool.js');
+```
 
 Pass the `genForm` method an array of objects to convert to HTML inputs:
 
