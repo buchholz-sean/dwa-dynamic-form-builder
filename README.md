@@ -27,12 +27,25 @@ node demo
 
 ## How it works
 
-The `genForm` method accepts an array of objects with a required `type` property and optional `id` property. The recognized input types are:
-* Text
-* Label
-* Select
+The `genForm` method accepts an array of objects with a required `type` property and optional `id` property. Some input types accept other optional properties, too.
 
-The `label` type will also accept an optional property of `for`.
+The recognized input types and their optional properties are:
+* Text
+  * id
+  * name
+* Password
+  * id
+  * name
+* Label
+  * id
+  * for
+* Select
+  * id
+* Reset
+  * id
+* Submit
+  * id
+  * value
 
 The `type` property is case-insensitive, and the tool will ignore any unrecognized values of `type`, as well as any unsupported properties like `class`.
 
