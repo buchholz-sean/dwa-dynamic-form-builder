@@ -10,38 +10,38 @@ exports.genForm = (inputs) => {
                 switch (input.type.toLowerCase()) {
                     // Ternary expressions in the middle of each case add context if user provides optional `id` or `for` properties
                     case 'text':
-                        formStr += '<input type="text"';
-                        formStr += input.id ? ' id="' + input.id + '"' : '';
-                        formStr += input.name ? ' name="' + input.name + '"' : '';
-                        formStr += ' />';
+                        formStr += '<input type="text"' +
+                            (input.id ? ' id="' + input.id + '"' : '') +
+                            (input.name ? ' name="' + input.name + '"' : '') +
+                            ' />';
                         break;
                     case 'password':
-                        formStr += '<input type="password"';
-                        formStr += input.id ? ' id="' + input.id + '"' : '';
-                        formStr += input.name ? ' name="' + input.name + '"' : '';
-                        formStr += ' />';
+                        formStr += '<input type="password"' +
+                            (input.id ? ' id="' + input.id + '"' : '') +
+                            (input.name ? ' name="' + input.name + '"' : '') +
+                            ' />';
                         break;
                     case 'label':
-                        formStr += '<label';
-                        formStr += input.id ? ' id="' + input.id + '"' : '';
-                        formStr += input.for ? ' for="' + input.for+'"' : '';
-                        formStr += '></label>';
+                        formStr += '<label' +
+                            (input.id ? ' id="' + input.id + '"' : '') +
+                            (input.for ? ' for="' + input.for+'"' : '') +
+                            '></label>';
                         break;
                     case 'select':
-                        formStr += '<select';
-                        formStr += input.id ? ' id="' + input.id + '"' : '';
-                        formStr += '></select>'
+                        formStr += '<select' +
+                            (input.id ? ' id="' + input.id + '"' : '') +
+                            '></select>';
                         break;
                     case 'reset':
-                        formStr += '<input type="reset"';
-                        formStr += input.id ? ' id="' + input.id + '"' : '';
-                        formStr += ' />';
+                        formStr += '<input type="reset"' +
+                            (input.id ? ' id="' + input.id + '"' : '') +
+                            ' />';
                         break;
                     case 'submit':
-                        formStr += '<input type="submit"';
-                        formStr += input.id ? ' id="' + input.id + '"' : '';
-                        formStr += input.value ? ' value="' + input.value + '"' : '';
-                        formStr += ' />';
+                        formStr += '<input type="submit"' +
+                            (input.id ? ' id="' + input.id + '"' : '') +
+                            (input.value ? ' value="' + input.value + '"' : '') +
+                            ' />';
                         break;
                     default:
                         // If input doesn't match a supported value for `type`, we don't add anything to formStr
