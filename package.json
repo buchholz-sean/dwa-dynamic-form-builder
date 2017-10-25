@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/buchholz-sean/dwa-dynamic-form-builder/issues"
   },
-  "homepage": "https://github.com/buchholz-sean/dwa-dynamic-form-builder#readme"
+  "homepage": "https://github.com/buchholz-sean/dwa-dynamic-form-builder#readme",
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
 }
