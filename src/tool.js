@@ -1,10 +1,12 @@
 exports.genForm = (inputs) => {
     // Create a blank string to start with
     var formStr = '';
+
+    let validInputs = ['text', 'password', 'label', 'select', 'reset', 'submit']
     try {
         inputs.forEach((input) => {
             // Make sure input has property `type`
-            if (input.type) {
+                if(validInputs.includes(input.type)){
                 // Switch expression handles accepted input `type` props.
                 // toLowerCase makes sure we don't have to handle case sensitivity
                 switch (input.type.toLowerCase()) {
@@ -45,7 +47,7 @@ exports.genForm = (inputs) => {
                         break;
                     default:
                         // If input doesn't match a supported value for `type`, we don't add anything to formStr
-                        formStr += ''
+                        formStr += '';
                 }
             }
         })
