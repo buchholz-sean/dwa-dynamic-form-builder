@@ -10,27 +10,9 @@ exports.genForm = (inputs) => {
         switch (input.type.toLowerCase()) {
           // Ternary expressions in the middle of each case add context if user provides optional `id` or `for` properties
           case 'text':
-            formStr += `<input type="text"` +
-              (input.id ? ` id="${input.id}"` : ``) +
-              (input.class ? ` class="${input.class}"` : ``) +
-              (input.name ? ` name="${input.name}"` : ``) +
-              (input.form ? ` form="${input.form}"` : ``) +
-              (input.value ? ` value="${input.value}"` : ``) +
-              (input.required ? ` required` : ``) +
-              ` />`;
-            break;
           case 'password':
-            formStr += `<input type="password"` +
-              (input.id ? ` id="${input.id}"` : ``) +
-              (input.class ? ` class="${input.class}"` : ``) +
-              (input.name ? ` name="${input.name}"` : ``) +
-              (input.form ? ` form="${input.form}"` : ``) +
-              (input.value ? ` value="${input.value}"` : ``) +
-              (input.required ? ` required` : ``) +
-              ` />`;
-            break;
           case 'email':
-            formStr += `<input type="email"` +
+            formStr += `<input type="${input.type}"` +
               (input.id ? ` id="${input.id}"` : ``) +
               (input.class ? ` class="${input.class}"` : ``) +
               (input.name ? ` name="${input.name}"` : ``) +
