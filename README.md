@@ -41,6 +41,7 @@ The recognized input types and their optional properties are:
 | `formaction` |                    |                    |                    |                    |                    |                    | :white_check_mark: |
 | `value`      | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    |                    | :white_check_mark: | :white_check_mark: |
 | `required`   | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    | :white_check_mark: |                    |                    |
+
 The `type` property is case-insensitive, and the tool will ignore any unrecognized values of `type`, as well as any unsupported properties like `class`.
 
 ### Basic usage
