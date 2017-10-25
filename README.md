@@ -27,7 +27,7 @@ node demo
 
 ## How it works
 
-The `genForm` method accepts an array of objects with a required `type` property and optional `id` property. Some input types accept other optional properties, too.
+The `genForm` method accepts an array of objects with a required `type` property and other optional properties.
 
 The recognized input types and their optional properties are:
 
@@ -42,7 +42,7 @@ The recognized input types and their optional properties are:
 | `value`      | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    |                    | :white_check_mark: | :white_check_mark: |
 | `required`   | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    | :white_check_mark: |                    |                    |
 
-The `type` property is case-insensitive, and the tool will ignore any unrecognized values of `type`, as well as any unsupported properties like `class`.
+The `type` property is case-insensitive, and the tool will ignore any unrecognized values of `type`, as well as any unsupported properties like `foo`.
 
 ### Basic usage
 
