@@ -30,23 +30,17 @@ node demo
 The `genForm` method accepts an array of objects with a required `type` property and optional `id` property. Some input types accept other optional properties, too.
 
 The recognized input types and their optional properties are:
-* Text
-  * id
-  * name
-* Password
-  * id
-  * name
-* Label
-  * id
-  * for
-* Select
-  * id
-* Reset
-  * id
-* Submit
-  * id
-  * value
 
+|              | *Text*             | *Email*            | *Password*         | *Label*            | *Select*           | *Reset*            | *Submit*           |
+|--------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| `id`         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| `class`      | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| `name`       | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| `for`        |                    |                    |                    | :white_check_mark: |                    |                    |                    |
+| `form`       | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| `formaction` |                    |                    |                    |                    |                    |                    | :white_check_mark: |
+| `value`      | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    |                    | :white_check_mark: | :white_check_mark: |
+| `required`   | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    | :white_check_mark: |                    |                    |
 The `type` property is case-insensitive, and the tool will ignore any unrecognized values of `type`, as well as any unsupported properties like `class`.
 
 ### Basic usage

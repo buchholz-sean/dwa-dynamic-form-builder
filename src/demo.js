@@ -6,23 +6,31 @@ var demoArr = [{
     for: 'nameInput'
 }, {
     type: 'text',
-    id: 'nameInput'
+    id: 'nameInput',
+    required: true
 }, {
     type: 'SELECT',
     id: 'caseInsensitive'
 }, {
     type: 'select',
-    for: 'bogusProperty'
+    for: 'bogusProperty',
+    required: false
 }, {
     type: 'bogusInput',
-    className: 'anotherBogusProp',
+    class: 'anotherBogusProp',
     id: 'this won\'t render'
 }, {
     type: 'text',
-    class: 'thisOneHasNoId'
+    class: 'textClass',
+    required: 'true'
 }, {
     foo: 'bar',
     baz: 'bat'
+}, {
+    type: 'Submit',
+    id: 'submitBtn',
+    formaction: '/some/action.php',
+    value: 'Submit Form'
 }];
 
 console.log(tool.genForm(demoArr));
