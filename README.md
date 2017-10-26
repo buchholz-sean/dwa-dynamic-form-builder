@@ -75,6 +75,23 @@ var output = tool.genForm(myArr);
 
 Take a look at [src/demo.js](./src/demo.js) to see an example array with both good and bad values.
 
+## Style guide
+
+This project uses the DWA Style Guide, which is an extension of the AirBnB JavaScript Style Guide. These style rules should be enforced through active and passive linting with ESLint.
+
+[Installing dependencies](https://github.com/buchholz-sean/dwa-dynamic-form-builder/tree/eslint#installation) will ensure you have the necessary plugins to implement tool-assisted enforcement of the Style Guide.
+
+### Linter testing
+
+To test ESLint/DWA Style Guide compliance, `cd` into the root project directory and run
+```
+mocha
+```
+
+### Passive (IDE) linting
+
+If using [Atom](https://atom.io) you can install the [`linter-eslint` package](https://atom.io/packages/linter-eslint) to take advantage of the `eslintrc.json` provided in this repo. Any linter errors/warning will be flagged in your editor window.
+
 ## About the author
 
 ### Sean Buchholz

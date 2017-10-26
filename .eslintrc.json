@@ -1,0 +1,22 @@
+{
+	"env": {
+		"node": true,
+		"mocha": true
+	},
+	"extends": "airbnb",
+	"plugins": [],
+	"rules": {
+		"new-cap": 0,
+		"prefer-template": 0,
+		"global-require": 0,
+		"no-unused-expressions": 0,
+		"no-unused-vars": 0,
+		"no-undef": 0,
+		"no-underscore-dangle": 0,
+		"import/no-dynamic-require": 0
+	},
+	"globals": {
+		"describe": true,
+		"it": true
+	}
+}
